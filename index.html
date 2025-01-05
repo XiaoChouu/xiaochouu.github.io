@@ -1,99 +1,71 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XiaoChou's website</title>
-    <link rel="icon" href="https://xiaochouu.github.io/tubiao.png">
-    <meta name="description" content=Welcome to XiaoChou's website,此网站开源，并使用GitHub Pages托管。如果打不开可以使用加速器加速。">
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-        }
-        .background {
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-        .heading {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        .button-container {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 800px;
-        }
-        .button {
-            background-color: #0f12d8;
-            border: none;
-            color: white;
-            padding: 20px 30px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 24px;
-            margin: 5px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #00c3ff;
-        }
-        .link {
-            color: rgb(0, 0, 0);
-            text-decoration: none; /* 去除下划线 */
-            cursor: pointer;
-        }
-        @keyframes wave {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        .playground {
-            font-size: 2em;
-            color: black;
-            animation: wave 1s infinite;
-        }
-    </style>
+    <title>XiaoChou's Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="background">
-        <div class="heading"><h2>Welcome to xiaochouu.github.io</h2></div>
-        <div class="button-container">
-            <a href="https://xiaochouu.github.io/EGGYPARTYVIDEO/" class="button">蛋仔派对赛季视频下载</a>
-            <a href="https://www.douyin.com/user/MS4wLjABAAAAIlnCToTNn3w5gYQstjAQhAvhaMbsyusIm_v-ygg8csI?from_tab_name=main" class="button">本人の抖音号</a>
-            <a href="https://xiaochouu.github.io/毒蘑菇性能测试.htm" class="button">毒蘑菇性能测试（没什么用...）</a>
-        </div>
-        <span class="link" onclick="openWebsite()">如果访问不了、下载速度慢、加载异常，可以点击此处下载加速器。（点击打开加速器官网）</span>
-        
-        <script>
-            function openWebsite() {
-                try {
-                    window.open('https://steampp.net/', '_blank');
-                } catch (err) {
-                    console.error('打开网站时发生错误:', err);
-                    alert('无法打开加速器官网，请检查您的网络连接。');
-                }
-            }
-        </script>
-        
-        <br>
-        <a href="https://github.com/XiaoChouu/" target="_blank" style="color: rgb(0, 0, 0); text-decoration: none;">本人のGitHub（此网站开源，并使用GitHub Pages托管）</a>
+    <div class="container">
+        <header class="header">
+            <h1>XiaoChou</h1>
+            <p class="subtitle">Welcome to my website</p>
+        </header>
+
+        <nav class="nav-links">
+            <a href="https://github.com/xiaochouu" target="_blank" class="nav-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fab fa-tiktok"></i>
+                <span>抖音</span>
+            </a>
+        </nav>
+
+        <main class="content">
+            <div class="button-container">
+                <a href="eggypartyvideo/index.html" class="site-button">
+                    <i class="fas fa-video"></i>
+                    <span>视频下载</span>
+                </a>
+                <a href="https://projects.example.com" class="site-button">
+                    <i class="fas fa-code"></i>
+                    <span>项目</span>
+                </a>
+                <a href="https://about.example.com" class="site-button">
+                    <i class="fas fa-user"></i>
+                    <span>关于</span>
+                </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="dynamic-content">
+                <div class="content-header">
+                    <h2>最新动态</h2>
+                </div>  
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <i class="fas fa-circle"></i>
+                            <span>2025-01-02</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>网站创建</h3>
+                            <p>购买了新的域名，重新写了网站。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
 </body>
 </html>
-
-
-
-
-本网站最后更新日期：2024年12月16日
-
